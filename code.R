@@ -1,11 +1,11 @@
+youtube <- read.csv("https://raw.githubusercontent.com/ErikaDib/erikadib.github.io/master/data.csv",
+header = TRUE)
 mean(youtube$Video.views)
 mean(youtube$Subscribers, na.rm=TRUE)
 mean(youtube$Video.Uploads, na.rm=TRUE)
 sd(youtube$Video.views)
 sd(youtube$Subscribers, na.rm=TRUE)
 sd(youtube$Video.Uploads, na.rm=TRUE)
-youtube <- read.csv("https://raw.githubusercontent.com/ErikaDib/erikadib.github.io/master/data.csv",
-header = TRUE)
 plot(youtube$Video.Uploads, col="blue", xlab="Channels", ylab="Channel total video uploads", main="Total uploads per YouTube Channel", col.main="red")
 plot(youtube$Subscribers/10000000, col="red", xlab="Channels", ylab="Channel total subscribers in Millions", main="Total subscribers per YouTube Channel", col.main="Gray")
 plot(youtube$Video.views/10000000000, axes=FALSE, col="red", xlab="Channels", ylab="Channel video views", main="Total video views per YouTube Channel", col.main="blue")
