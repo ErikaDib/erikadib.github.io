@@ -12,3 +12,10 @@ plot(youtube$Video.views/10000000000, axes=FALSE, col="red", xlab="Channels", yl
 axis(1)
 pts <- pretty(youtube$Video.views/10000000000)
 axis(2, at=pts, labels = paste(pts,"B",sep=""))
+
+install.packages('qcc')
+library(qcc)
+table(youtube$Grade)
+grade <-c(448,41,10)
+names(grade)<-c("A","A+","A++")
+pareto.chart(grade, main='Pareto chart for grade of Youtube channels', ylab='YouTube Channel grade frequency',col=rainbow(length(grade)))
