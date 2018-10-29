@@ -19,3 +19,21 @@ table(youtube$Grade)
 grade <-c(448,41,10)
 names(grade)<-c("A","A+","A++")
 pareto.chart(grade, main='Pareto chart for grade of Youtube channels', ylab='YouTube Channel grade frequency',col=rainbow(length(grade)))
+
+youtubeViewsMean <- mean(youtube$Video.views)
+youtubeSubscriberMean <- mean(youtube$Subscribers, na.rm=TRUE)
+youtubeUploadsMean <- mean(youtube$Video.Uploads, na.rm=TRUE)
+
+qnorm(1-00.5/2)
+
+MEviews <- 1.959964*(sd(youtube$Video.views)/sqrt(500))
+youtubeViewsMean - MEviews
+youtubeViewsMean + MEviews
+
+MESubs <- 1.959964*(sd(youtube$Subscribers,na.rm=TRUE)/sqrt(500))
+youtubeSubscriberMean - MESubs
+youtubeSubscriberMean + MESubs
+
+MEUpl <- 1.959964*(sd(youtube$Video.Uploads,na.rm=TRUE)/sqrt(500))
+youtubeUploadsMean - MEUpl
+youtubeUploadsMean + MEUpl
