@@ -50,3 +50,6 @@ t.test(lots_of_video_uploads$Subscribers,less_video_uploads$Subscribers)
 more_subscribers <- subset(youtube, Subscribers > 10000000)
 less_subscribers <- subset(youtube, Subscribers < 1000000)
 t.test(more_subscribers$Video.views,less_subscribers$Video.views)
+
+video_views_lm <- lm(Video.views~Video.Uploads, data=youtube)
+ci.plot(video_views_lm)
