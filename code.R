@@ -37,3 +37,16 @@ youtubeSubscriberMean + MESubs
 MEUpl <- 1.959964*(sd(youtube$Video.Uploads,na.rm=TRUE)/sqrt(500))
 youtubeUploadsMean - MEUpl
 youtubeUploadsMean + MEUpl
+
+lots_of_video_uploads <- subset(youtube, Video.Uploads >= 10000)
+less_video_uploads <- subset(youtube, Video.Uploads < 10000)
+nrow(lots_of_video_uploads)
+nrow(less_video_uploads)
+mean_lots_of_video_uploads <- mean(lots_of_video_uploads$Video.views)
+mean_less_video_uploads <- mean(less_video_uploads$Video.views)
+sd_lots_of_video_uploads <- sd(lots_of_video_uploads$Video.views)
+t.test(lots_of_video_uploads$Video.views,less_video_uploads$Video.views)
+t.test(lots_of_video_uploads$Subscribers,less_video_uploads$Subscribers)
+more_subscribers <- subset(youtube, Subscribers > 10000000)
+less_subscribers <- subset(youtube, Subscribers < 1000000)
+t.test(more_subscribers$Video.views,less_subscribers$Video.views)
