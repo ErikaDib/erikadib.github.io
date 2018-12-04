@@ -53,3 +53,6 @@ t.test(more_subscribers$Video.views,less_subscribers$Video.views)
 
 video_views_lm <- lm(Video.views~Video.Uploads, data=youtube)
 ci.plot(video_views_lm)
+
+plot(Subscribers~Grade,data=youtube, main="Box plot by channel ranking",col='red')
+anova(lm(Subscribers~Grade,data=youtube))
