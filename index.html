@@ -33,19 +33,22 @@ and is wrapped around the whole page content, except for the footer in this exam
   </header>
 
   <!-- Grid -->
-  <div class="w3-row w3-padding w3-border">
+  <div class="w3-row w3-white w3-padding w3-border">
 
     <!-- Blog entries -->
-    <div class="w3-col l8 s12">
+    <div class="w3-col s12">
 
       <!-- Blog entry -->
+   <div class="w3-col l6 s12">
       <div class="w3-container w3-white w3-margin w3-padding-large">
         <div class="w3-center">
           <h3>THE DATA</h3>
         </div>
+        <div class="w3-center">
+           <img src="secondimage.gif" alt="Girl Hat" style="width:75%" class="w3-padding-16">
+        </div>
 
         <div class="w3-justify">
-          <img src="secondimage.gif" alt="Girl Hat" style="width:100%" class="w3-padding-16">
           <p>
           "The dataset contains the top 5000 rankings of the YouTube channels by a company
           named Socialblade. The data contains various information on the YouTube channels
@@ -58,10 +61,49 @@ and is wrapped around the whole page content, except for the footer in this exam
           </div>
         </div>
       </div>
-      <hr>
+    </div>
+    <div class="w3-col l6 s12">
+      <div class="w3-white w3-margin">
+        <div class="w3-container w3-padding w3-black">
+          <h4>QUESTIONS</h4>
+        </div>
+        <ul class="w3-ul w3-hoverable w3-white">
+          <li class="w3-padding-16">
+            <img src="thumbnail.jpeg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large">1.</span>
+            <br>
+            <span>Does more videos published means more views?</span>
+          </li>
+          <li class="w3-padding-16">
+            <img src="thumbnail.jpeg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large">2.</span>
+            <br>
+            <span>Does more videos published means more subcribers?</span>
+          </li>
+          <li class="w3-padding-16">
+            <img src="thumbnail.jpeg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+            <span class="w3-large">3.</span>
+            <br>
+            <span>Does the increase in views increase subcriptions? how much?</span>
+          </li>
+          <li class="w3-padding-16">
+            <img src="thumbnail.jpeg" alt="Image" class="w3-left w3-margin-right w3-sepia" style="width:50px">
+            <span class="w3-large">4.</span>
+            <br>
+            <span>Is the highest rated youtube channel the more popular in views and subscribers?</span>
+          </li>
+          <li class="w3-padding-16">
+            <img src="thumbnail.jpeg" alt="Image" class="w3-left w3-margin-right w3-sepia" style="width:50px">
+            <span class="w3-large">5.</span>
+            <br>
+            <span>Why channels with few videos are so popular?</span>
+          </li>
+        </ul>
+      </div>
+     </div>
 
       <!-- About/Information menu -->
-      <div class="w3-container w3-white w3-margin w3-padding-large">
+      <div class="w3-container w3-margin w3-padding-large">
 
         <!-- Posts -->
         <div class="w3-white w3-margin">
@@ -126,42 +168,33 @@ and is wrapped around the whole page content, except for the footer in this exam
       <!-- Images -->
       </div>
 
-      <div class="w3-container w3-white w3-margin w3-padding-large">
+      <div class="w3-container w3-black w3-margin w3-padding-large">
         <div class="w3-center">
           <h3>Video Views</h3>
         </div>
 
-        <div class="w3-justify">
-          <img src="Videoviews.png" alt="index plot" style="width:100%" class="w3-padding-16">
-          <p></p>
-          <div class="w3-row w3-margin-bottom" id="demo1" style="display:none">
-          </div>
+        <div class="w3-center">
+          <img src="Videoviews.png" alt="index plot" style="width:75%" class="w3-padding-16">
         </div>
       </div>
 
-      <div class="w3-container w3-white w3-margin w3-padding-large">
+      <div class="w3-container w3-gray w3-margin w3-padding-large">
         <div class="w3-center">
           <h3>Video Uploads</h3>
         </div>
 
-        <div class="w3-justify">
-          <img src="VideoUploads.png" alt="index plot" style="width:100%" class="w3-padding-16">
-          <p></p>
-          <div class="w3-row w3-margin-bottom" id="demo1" style="display:none">
-          </div>
+        <div class="w3-center">
+          <img src="VideoUploads.png" alt="index plot" style="width:75%" class="w3-padding-16">
         </div>
       </div>
 
-      <div class="w3-container w3-white w3-margin w3-padding-large">
+      <div class="w3-container w3-black w3-margin w3-padding-large">
         <div class="w3-center">
           <h3>Subscribers</h3>
         </div>
 
-        <div class="w3-justify">
-          <img src="Subscribers.png" alt="index plot" style="width:100%" class="w3-padding-16">
-          <p></p>
-          <div class="w3-row w3-margin-bottom" id="demo1" style="display:none">
-          </div>
+        <div class="w3-center">
+          <img src="Subscribers.png" alt="index plot" style="width:75%" class="w3-padding-16">
         </div>
       </div>
 
@@ -170,10 +203,10 @@ and is wrapped around the whole page content, except for the footer in this exam
           <h3>PARETO CHART</h3>
         </div>
 
-        <div class="w3-justify">
-          <img src="paretoChart.png" alt="Pareto chart" style="width:100%" class="w3-padding-16">
-          <p>Pareto chart displaying the gradding of YouTube channels by Kaggle.
-          Most of the top 500 videos have a rank of A</p>
+        <div class="w3-center">
+          <img src="paretoChart.png" alt="Pareto chart" style="width:75%" class="w3-padding-16">
+          <h4>Pareto chart displaying the gradding of YouTube channels by Kaggle.
+          Most of the top 500 videos have a rank of A</h4>
           <div class="w3-row w3-margin-bottom" id="demo1" style="display:none">
           </div>
         </div>
@@ -207,72 +240,71 @@ and is wrapped around the whole page content, except for the footer in this exam
         </ul>
       </div>
 
-      <div class="w3-container w3-white w3-margin w3-padding-large">
+      <div class="w3-container w3-border w3-white w3-margin w3-padding-large">
         <div class="w3-center">
           <h3>HYPOTHESIS TEST 1</h3>
         </div>
         <div class="w3-justify">
-          <p>
+          <h4>
             Is there a difference in views between the YouTube channels that
             uploaded a lot of videos (over 10000) and the channels who uploaded
              less videos (under 10000)?. The test is a 0.05 confidence level.
-          </p>
+          </h4>
         </div>
-
-        <div class="w3-justify">
-          <img src="test1.png" alt="test 1" style="width:100%" class="w3-padding-16">
-          <p>We can conclude at a 95% confidence level that there is a difference
+        <div class="w3-center">
+          <img src="test1.png" alt="test 1" style="width:75%" class="w3-padding-16">
+        </div>
+          <div class="w3-justify">
+          <h4>We can conclude at a 95% confidence level that there is a difference
             between the two means between the channels that upload a lot of videos
-             (over 10000) and the ones who don’t (less than 10000).</p>
+             (over 10000) and the ones who don’t (less than 10000).</h4>
           <div class="w3-row w3-margin-bottom" id="demo1" style="display:none">
           </div>
         </div>
       </div>
 
-      <div class="w3-container w3-white w3-margin w3-padding-large">
+      <div class="w3-container w3-border w3-white w3-margin w3-padding-large">
         <div class="w3-center">
           <h3>HYPOTHESIS TEST 2</h3>
         </div>
 
         <div class="w3-justify">
-          <p>
+          <h4>
             Is there a difference in Subscribers between the YouTube channels
             that uploaded a lot of videos (over 10000) and the channels who
             uploaded less videos(under 10000). The test is a 0.05 confidence level.
-          </p>
+          </h4>
         </div>
-
+        <div class="w3-center">
+           <img src="test2.png" alt="test2" style="width:75%" class="w3-padding-16">
+        </div>
         <div class="w3-justify">
-          <img src="test2.png" alt="test2" style="width:100%" class="w3-padding-16">
-          <p>We can conclude at a 95% confidence level that there is not significance
+          <h4>We can conclude at a 95% confidence level that there is not significance
             difference in the two means of the subscribers beetween the channels that upload a
-             lot of videos (over 10000) and the ones who don’t (less than 10000).</p>
-          <div class="w3-row w3-margin-bottom" id="demo1" style="display:none">
-          </div>
+             lot of videos (over 10000) and the ones who don’t (less than 10000).</h4>
         </div>
       </div>
 
-      <div class="w3-container w3-white w3-margin w3-padding-large">
+      <div class="w3-container w3-border w3-white w3-margin w3-padding-large">
         <div class="w3-center">
           <h3>HYPOTHESIS TEST 3</h3>
         </div>
         <div class="w3-justify">
-          <p>
+          <h4>
             Is there a difference in video views between the YouTube channels
             that have more subscribers (over 10 million) and the channels
             who have less subscribers (less than 1 million).
             The test is a 0.05 confidence level.
-          </p>
+          </h4>
         </div>
-
+        <div class="w3-center">
+          <img src="test3.png" alt="test3" style="width:75%" class="w3-padding-16">
+        </div>
         <div class="w3-justify">
-          <img src="test3.png" alt="test3" style="width:100%" class="w3-padding-16">
-          <p>We can conclude at a 95% confidence level that there is evidence
+          <h4>We can conclude at a 95% confidence level that there is evidence
             that there is a difference in views beetween the YouTube
             channels with more subscribers and the YouTube channels
-            with less subscribers.</p>
-          <div class="w3-row w3-margin-bottom" id="demo1" style="display:none">
-          </div>
+            with less subscribers.</h4>
         </div>
       </div>
 
@@ -280,24 +312,22 @@ and is wrapped around the whole page content, except for the footer in this exam
         <div class="w3-center">
           <h3>LINEAR MODEL</h3>
         </div>
-        <div class="w3-justify">
-          <img src="LinearModel.png" alt="test3" style="width:100%" class="w3-padding-16">
-          <p>We can be 95% confident that the confidence interval
-          contains the true population parameter.</p>
-          <div class="w3-row w3-margin-bottom" id="demo1" style="display:none">
-          </div>
+        <div class="w3-center">
+          <img src="LinearModel.png" alt="test3" style="width:50%" class="w3-padding-16">
+          <h4>We can be 95% confident that the confidence interval
+          contains the true population parameter.</h4>
         </div>
       </div>
 
-      <div class="w3-container w3-white w3-margin w3-padding-large">
+      <div class="w3-container w3-black w3-margin w3-padding-large">
         <div class="w3-center">
           <h3>ANOVA</h3>
         </div>
-        <div class="w3-justify">
-          <img src="boxplotForAnova.png" alt="test3" style="width:100%" class="w3-padding-16">
-          <img src="anovass.png" alt="test3" style="width:100%" class="w3-padding-16">
-          <p>There is sufficient evidence at the 0.05 level to conclude that the mean number of Subscribers of the three
-            different ranks are significantly different.</p>
+        <div class="w3-center">
+          <img src="boxplotForAnova.png" alt="test3" style="width:75%" class="w3-padding-16">
+          <img src="anovass.png" alt="test3" style="width:75%" class="w3-padding-16">
+          <h4>There is sufficient evidence at the 0.05 level to conclude that the mean number of Subscribers of the three
+            different ranks are significantly different.</h4>
           <div class="w3-row w3-margin-bottom" id="demo1" style="display:none">
           </div>
         </div>
@@ -308,46 +338,6 @@ and is wrapped around the whole page content, except for the footer in this exam
 
     <!-- About/Information menu -->
     <div class="w3-col l4">
-
-      <!-- Posts -->
-      <div class="w3-white w3-margin">
-        <div class="w3-container w3-padding w3-black">
-          <h4>QUESTIONS</h4>
-        </div>
-        <ul class="w3-ul w3-hoverable w3-white">
-          <li class="w3-padding-16">
-            <img src="thumbnail.jpeg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-            <span class="w3-large">1.</span>
-            <br>
-            <span>Does more videos published means more views?</span>
-          </li>
-          <li class="w3-padding-16">
-            <img src="thumbnail.jpeg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-            <span class="w3-large">2.</span>
-            <br>
-            <span>Does more videos published means more subcribers?</span>
-          </li>
-          <li class="w3-padding-16">
-            <img src="thumbnail.jpeg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
-            <span class="w3-large">3.</span>
-            <br>
-            <span>Does the increase in views increase subcriptions? how much?</span>
-          </li>
-          <li class="w3-padding-16">
-            <img src="thumbnail.jpeg" alt="Image" class="w3-left w3-margin-right w3-sepia" style="width:50px">
-            <span class="w3-large">4.</span>
-            <br>
-            <span>Is the highest rated youtube channel the more popular in views and subscribers?</span>
-          </li>
-          <li class="w3-padding-16">
-            <img src="thumbnail.jpeg" alt="Image" class="w3-left w3-margin-right w3-sepia" style="width:50px">
-            <span class="w3-large">5.</span>
-            <br>
-            <span>Why channels with few videos are so popular?</span>
-          </li>
-        </ul>
-      </div>
-      <hr>
 
     <!-- END About/Intro Menu -->
     </div>
